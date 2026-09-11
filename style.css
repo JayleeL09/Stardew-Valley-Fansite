@@ -1,0 +1,188 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 10vw 1.5vw 3vw 40vw 2vw 40vw 5vw 7vw;
+    grid-template-rows: 8vh 10vh 58vh 5vh 30vh 7vh auto;
+
+    background-image: url("images/sdvHomescreen.jpg");
+} 
+
+
+
+#logo {
+    /* background-color: aqua;*/
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+ }
+#legenda {
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    grid-column: 1 / 2;
+    grid-row: 3 / 8;
+
+        border-width: 5px 5px 5px 0px; /* 25px top, 10px right, 4px bottom and 35px left */
+    border:hsl(32, 75%, 31%) solid;
+}
+    .junimo{
+      size: 50%;
+      text-align: middle;
+      display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: evenly;
+    }
+
+  .Cola {
+      size: 50%;
+      text-align: middle;
+      display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: evenly;
+    }
+
+#backdrop {
+    background-color: rgba(255, 255, 255, 0.5);
+    grid-column: 3 / 7;
+    grid-row: 2 / 8;
+}
+
+  .JunimoText{
+    display: flex;
+    align-items: center;
+    gap: 100px;
+  }
+
+  .JunimoText h3{
+    white-space: pre-line; /* keeps your manual line breaks */
+    max-width: 60%; /*prevents text from taking full width*/  
+  }
+    .JunimoText img {
+      width: 200px;
+      height: auto;
+      flex-shrink: 0; /* prevents image from shrinking */
+    }
+
+
+  .junimomo{
+      size: 50%;
+      text-align: middle;
+    }
+
+    #cult{
+      size: 50%;
+      text-align: middle;
+    }
+
+
+
+#search {
+    color: white;
+    grid-column: 3 / 7;
+    grid-row: 1 / 2;
+    align-self: end;
+    text-align: right;
+
+
+    /* unvisited link */
+}
+a:link {
+  color: hsl(0, 0%, 100%);
+}
+
+/* visited link */
+a:visited {
+  color: #eaf0c8;
+}
+
+/* mouse over link */
+a:hover {
+  color: #6390c7;
+}
+
+/* selected link */
+a:active {
+  color: #0055ff;
+}
+
+   
+#sites {
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 2px hsl(32, 75%, 31%) hidden;
+    grid-column: 4 / 5;
+    grid-row: 4 / 5;
+}
+#download {
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 2px hsl(32, 75%, 31%) hidden;
+    grid-column: 4 / 5;
+    grid-row: 5 / 7;
+}
+    .CC{
+      Background-image: url("images/CommunityCenter.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      text-align: middle;
+      
+      display: flex;
+      background-position: center;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center
+    
+    }
+    
+    
+    #soundtrack{
+      size: 25%;
+      text-align: middle;
+    }
+
+#versies {
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 2px hsl(32, 75%, 31%) hidden;
+    grid-column: 6 / 7;
+    grid-row: 4 / 6;
+}
+  .CCF{
+      Background-image: url("images/FixedCC.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      text-align: middle;
+      
+      display: flex;
+      background-position: center;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center
+    }
+
+
+#taal {
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 2px hsl(32, 75%, 31%) hidden;
+    grid-column: 6 / 7;
+    grid-row: 6 / 7;
+}
+
